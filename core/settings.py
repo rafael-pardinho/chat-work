@@ -45,9 +45,17 @@ INSTALLED_APPS = [
     
     #Rest-Framework
     'rest_framework',
+    
+    # Cors
+    'corsheaders',
 ]
 
+
 MIDDLEWARE = [
+    #Cors
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    #Django
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
