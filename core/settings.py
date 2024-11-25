@@ -49,6 +49,9 @@ INSTALLED_APPS = [
     
     # Cors
     'corsheaders',
+    
+    # Apps
+    'accounts'
 ]
 
 
@@ -121,6 +124,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = 'accounts.User'
 
 
 # Internationalization
